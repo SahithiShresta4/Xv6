@@ -1,0 +1,153 @@
+<title>Vdbench output/config.html</title><pre>
+Output from script /home/sahithishresta/Downloads/vdbench/linux/config.sh: 
+
+Monday 14 November 2022 10:51:22 PM IST
+>>>>>uname -a
+Linux sahithishresta 5.15.0-47-generic #51-Ubuntu SMP Thu Aug 11 07:51:15 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Monday 14 November 2022 10:51:22 PM IST
+>>>>>ifconfig -a
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::c058:5fd0:3f9b:c16e  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:fb:a0:ae  txqueuelen 1000  (Ethernet)
+        RX packets 4633  bytes 4409131 (4.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3076  bytes 938101 (938.1 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 2447  bytes 403367 (403.3 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2447  bytes 403367 (403.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:cb:09:9c  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+Monday 14 November 2022 10:51:22 PM IST
+>>>>>id
+uid=0(root) gid=0(root) groups=0(root)
+Monday 14 November 2022 10:51:22 PM IST
+>>>>>mount
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+udev on /dev type devtmpfs (rw,nosuid,relatime,size=2149788k,nr_inodes=537447,mode=755,inode64)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,noexec,relatime,size=437460k,mode=755,inode64)
+/dev/sda3 on / type ext4 (rw,relatime,errors=remount-ro)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev,inode64)
+tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k,inode64)
+cgroup2 on /sys/fs/cgroup type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate,memory_recursiveprot)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+bpf on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=29,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=15701)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)
+mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)
+tracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)
+debugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime)
+fusectl on /sys/fs/fuse/connections type fusectl (rw,nosuid,nodev,noexec,relatime)
+configfs on /sys/kernel/config type configfs (rw,nosuid,nodev,noexec,relatime)
+none on /run/credentials/systemd-sysusers.service type ramfs (ro,nosuid,nodev,noexec,relatime,mode=700)
+tmpfs on /run/qemu type tmpfs (rw,nosuid,nodev,relatime,mode=755,inode64)
+/dev/sdc on /mnt/04d148ca-4342-4a72-8322-c01e459625d7 type ext4 (rw,nosuid,nodev,relatime,x-gvfs-show)
+/dev/sda2 on /boot/efi type vfat (rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro)
+zfs_pool on /zfs_pool type zfs (rw,xattr,noacl)
+/var/lib/snapd/snaps/bare_5.snap on /snap/bare/5 type squashfs (ro,nodev,relatime,errors=continue,x-gdu.hide)
+/var/lib/snapd/snaps/core20_1623.snap on /snap/core20/1623 type squashfs (ro,nodev,relatime,errors=continue,x-gdu.hide)
+/var/lib/snapd/snaps/core20_1695.snap on /snap/core20/1695 type squashfs (ro,nodev,relatime,errors=continue,x-gdu.hide)
+/var/lib/snapd/snaps/firefox_2042.snap on /snap/firefox/2042 type squashfs (ro,nodev,relatime,errors=continue,x-gdu.hide)
+/var/lib/snapd/snaps/firefox_2067.snap on /snap/firefox/2067 type squashfs (ro,nodev,relatime,errors=continue,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-3-38-2004_115.snap on /snap/gnome-3-38-2004/115 type squashfs (ro,nodev,relatime,errors=continue,x-gdu.hide)
+/var/lib/snapd/snaps/snapd_17029.snap on /snap/snapd/17029 type squashfs (ro,nodev,relatime,errors=continue,x-gdu.hide)
+/var/lib/snapd/snaps/snap-store_599.snap on /snap/snap-store/599 type squashfs (ro,nodev,relatime,errors=continue,x-gdu.hide)
+/dev/sda3 on /var/snap/firefox/common/host-hunspell type ext4 (ro,noexec,noatime,errors=remount-ro)
+/var/lib/snapd/snaps/gnome-3-38-2004_119.snap on /snap/gnome-3-38-2004/119 type squashfs (ro,nodev,relatime,errors=continue,x-gdu.hide)
+/var/lib/snapd/snaps/snap-store_592.snap on /snap/snap-store/592 type squashfs (ro,nodev,relatime,errors=continue,x-gdu.hide)
+/var/lib/snapd/snaps/gtk-common-themes_1535.snap on /snap/gtk-common-themes/1535 type squashfs (ro,nodev,relatime,errors=continue,x-gdu.hide)
+/var/lib/snapd/snaps/snapd_17336.snap on /snap/snapd/17336 type squashfs (ro,nodev,relatime,errors=continue,x-gdu.hide)
+/var/lib/snapd/snaps/snapd-desktop-integration_14.snap on /snap/snapd-desktop-integration/14 type squashfs (ro,nodev,relatime,errors=continue,x-gdu.hide)
+binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /run/snapd/ns type tmpfs (rw,nosuid,nodev,noexec,relatime,size=437460k,mode=755,inode64)
+nsfs on /run/snapd/ns/snapd-desktop-integration.mnt type nsfs (rw)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=437456k,nr_inodes=109364,mode=700,uid=1000,gid=1000,inode64)
+gvfsd-fuse on /run/user/1000/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+portal on /run/user/1000/doc type fuse.portal (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+/dev/sr0 on /media/sahithishresta/VBox_GAs_6.1.36 type iso9660 (ro,nosuid,nodev,relatime,nojoliet,check=s,map=n,blocksize=2048,uid=1000,gid=1000,dmode=500,fmode=400,iocharset=utf8,uhelper=udisks2)
+nsfs on /run/snapd/ns/firefox.mnt type nsfs (rw)
+Monday 14 November 2022 10:51:22 PM IST
+>>>>>memory
+MemTotal:        4374564 kB
+MemFree:          911208 kB
+MemAvailable:    2569168 kB
+Buffers:           51136 kB
+Cached:          1837224 kB
+SwapCached:            0 kB
+Active:           871680 kB
+Inactive:        2281332 kB
+Active(anon):       2308 kB
+Inactive(anon):  1330896 kB
+Active(file):     869372 kB
+Inactive(file):   950436 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       3604476 kB
+SwapFree:        3604476 kB
+Dirty:               552 kB
+Writeback:             0 kB
+AnonPages:       1264676 kB
+Mapped:           540740 kB
+Shmem:             73484 kB
+KReclaimable:      84276 kB
+Slab:             169440 kB
+SReclaimable:      84276 kB
+SUnreclaim:        85164 kB
+KernelStack:       12740 kB
+PageTables:        24072 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     5791756 kB
+Committed_AS:    5785556 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       68344 kB
+VmallocChunk:          0 kB
+Percpu:             2104 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      239552 kB
+DirectMap2M:     4323328 kB
+               total        used        free      shared  buff/cache   available
+Mem:         4374564     1490720      911208       73484     1972636     2569168
+Low:         4374564     3463356      911208
+High:              0           0           0
+Swap:        3604476           0     3604476
+Monday 14 November 2022 10:51:22 PM IST
+>>>>>ps -ef | grep -i vdb
+root        4125    2731  0 22:51 pts/0    00:00:00 sudo ./vdbench -f workload2 anchor=/mnt/04d148ca-4342-4a72-8322-c01e459625d7
+root        4126    4125  0 22:51 pts/1    00:00:00 sudo ./vdbench -f workload2 anchor=/mnt/04d148ca-4342-4a72-8322-c01e459625d7
+root        4127    4126  0 22:51 pts/1    00:00:00 /bin/bash ./vdbench -f workload2 anchor=/mnt/04d148ca-4342-4a72-8322-c01e459625d7
+root        4129    4127  0 22:51 pts/1    00:00:00 java -client -Xmx512m -Xms64m -cp ./:./classes:./vdbench.jar Vdb.Vdbmain -f workload2 anchor=/mnt/04d148ca-4342-4a72-8322-c01e459625d7
+root        4156    4129  0 22:51 pts/1    00:00:00 /bin/bash /home/sahithishresta/Downloads/vdbench/vdbench SlaveJvm -m localhost -n localhost-10-221114-22.51.21.969 -l localhost-0 -p 5570
+root        4160    4156  0 22:51 pts/1    00:00:00 java -client -Xmx1024m -Xms128m -cp /home/sahithishresta/Downloads/vdbench/:/home/sahithishresta/Downloads/vdbench/classes:/home/sahithishresta/Downloads/vdbench/vdbench.jar Vdb.SlaveJvm SlaveJvm -m localhost -n localhost-10-221114-22.51.21.969 -l localhost-0 -p 5570
+root        4188    4129  0 22:51 pts/1    00:00:00 /bin/bash /home/sahithishresta/Downloads/vdbench/linux/config.sh -o /home/sahithishresta/Downloads/vdbench/output localhost
+root        4204    4188  0 22:51 pts/1    00:00:00 grep -i vdb
+

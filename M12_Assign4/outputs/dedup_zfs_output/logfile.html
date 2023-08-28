@@ -1,0 +1,43 @@
+<title>Vdbench output/logfile.html</title><pre>
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Vdbench distribution: vdbench50407
+
+22:46:25.506 input argument scanned: '-fworkload1'
+22:46:25.510 input argument scanned: 'anchor=zfs_loop'
+22:46:25.512 java.vendor                   Ubuntu
+22:46:25.512 java.home                     /usr/lib/jvm/java-11-openjdk-amd64
+22:46:25.512 java.vm.specification.version 11
+22:46:25.512 java.vm.version               11.0.17+8-post-Ubuntu-1ubuntu222.04
+22:46:25.512 java.vm.vendor                Ubuntu
+22:46:25.512 java.specification.version    11
+22:46:25.512 java.class.version            55.0
+22:46:25.512 user.name                     root
+22:46:25.512 user.dir                      /home/sahithishresta/Downloads/vdbench
+22:46:25.512 java.io.tmpdir                /tmp
+22:46:25.512 java.class.path               ./:./classes:./vdbench.jar
+22:46:25.512 os.name                       Linux
+22:46:25.512 os.arch                       amd64
+22:46:25.512 os.version                    5.15.0-47-generic
+22:46:25.512 sun.arch.data.model           64
+22:46:25.531 Flushing all reports
+22:46:25.576 Creating anchor for zfs_loop,fsd=fsd1
+22:46:25.611 rd1 fsd to format: fsd1
+22:46:25.611 rd1 format on host: localhost
+22:46:25.623 Anchor size: anchor=zfs_loop: dirs:           12; files:          450; bytes:   450.000m (471,859,200)
+22:46:25.756 Starting slave: /home/sahithishresta/Downloads/vdbench/vdbench SlaveJvm -m localhost -n localhost-10-221114-22.46.25.386 -l localhost-0 -p 5570   
+22:46:26.226 Slave localhost-0 (pid   2957) connected to master 2925
+22:46:26.282 All slaves are now connected
+22:46:26.390 localhost-0: Created anchor directory: zfs_loop
+22:46:26.967 killCommand: /home/sahithishresta/Downloads/vdbench/vdbench SlaveJvm -m localhost -n localhost-10-221114-22.46.25.386 -l localhost-0 -p 5570
+22:46:26.970 
+22:46:26.970 File system anchor does not exist on host=localhost; anchor=zfs_loop 
+22:46:26.971 	Maybe add 'create_anchors=yes' at the beginning of your parameter file?
+22:46:26.971 
+22:46:26.971 removeKillAtEnd(): Unable to find /home/sahithishresta/Downloads/vdbench/vdbench SlaveJvm -m localhost -n localhost-10-221114-22.46.25.386 -l localhost-0 -p 5570
+java.lang.RuntimeException: File system anchor does not exist on host=localhost; anchor=zfs_loop 
+	Maybe add 'create_anchors=yes' at the beginning of your parameter file?
+	at Vdb.common.failure(common.java:350)
+	at Vdb.InfoFromHost.matchDataWithSds(InfoFromHost.java:698)
+	at Vdb.InfoFromHost.receiveInfoFromHost(InfoFromHost.java:496)
+	at Vdb.SlaveOnMaster.processSlave(SlaveOnMaster.java:151)
+	at Vdb.SlaveOnMaster.run(SlaveOnMaster.java:42)

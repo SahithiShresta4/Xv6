@@ -1,0 +1,97 @@
+<title>Vdbench output/logfile.html</title><pre>
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Vdbench distribution: vdbench50407
+
+22:51:22.034 input argument scanned: '-fworkload2'
+22:51:22.035 input argument scanned: 'anchor=/mnt/04d148ca-4342-4a72-8322-c01e459625d7'
+22:51:22.036 java.vendor                   Ubuntu
+22:51:22.036 java.home                     /usr/lib/jvm/java-11-openjdk-amd64
+22:51:22.037 java.vm.specification.version 11
+22:51:22.037 java.vm.version               11.0.17+8-post-Ubuntu-1ubuntu222.04
+22:51:22.037 java.vm.vendor                Ubuntu
+22:51:22.037 java.specification.version    11
+22:51:22.037 java.class.version            55.0
+22:51:22.037 user.name                     root
+22:51:22.037 user.dir                      /home/sahithishresta/Downloads/vdbench
+22:51:22.037 java.io.tmpdir                /tmp
+22:51:22.037 java.class.path               ./:./classes:./vdbench.jar
+22:51:22.037 os.name                       Linux
+22:51:22.037 os.arch                       amd64
+22:51:22.037 os.version                    5.15.0-47-generic
+22:51:22.037 sun.arch.data.model           64
+22:51:22.039 Flushing all reports
+22:51:22.059 Creating anchor for /mnt/04d148ca-4342-4a72-8322-c01e459625d7,fsd=fsd1
+22:51:22.096 rd1 fsd to format: fsd1
+22:51:22.096 rd1 format on host: localhost
+22:51:22.099 Anchor size: anchor=/mnt/04d148ca-4342-4a72-8322-c01e459625d7: dirs:            0; files:            2; bytes:     2.000g (2,147,483,648)
+22:51:22.169 Starting slave: /home/sahithishresta/Downloads/vdbench/vdbench SlaveJvm -m localhost -n localhost-10-221114-22.51.21.969 -l localhost-0 -p 5570   
+22:51:22.498 Slave localhost-0 (pid   4160) connected to master 4129
+22:51:22.571 All slaves are now connected
+
+Link to Run Definitions:         <A HREF="#_1599771323">format_for_rd1 For loops: None</A>
+                                 <A HREF="#_1876631416">rd1 For loops: None</A>
+
+22:51:22.766 Flushing all reports
+22:51:22.768 slv=localhost-0 fwd=format fsd=fsd1 anchor=/mnt/04d148ca-4342-4a72-8322-c01e459625d7 threads= 8 skew= 0.00 operation=read 
+22:51:22.793 Waiting for synchronization of all slaves
+22:51:23.197 Synchronization of all slaves complete
+
+<a name="_1599771323"></a><i><b>22:51:24.002 Starting RD=format_for_rd1</b></i>
+
+22:51:24.641 localhost-0: anchor=/mnt/04d148ca-4342-4a72-8322-c01e459625d7 mkdir complete.
+Nov 14, 2022 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ...mkdir.... ...rmdir.... ...create... ....open.... ...close.... ...delete...
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp
+22:51:25.146            1 3424.0  0.199  26.8 12.4   0.0    0.0  0.000 3424.0  0.199  0.00 428.0 428.00  131072   1.0  0.180  12.0  0.130   0.0  0.000   2.0  1.612   0.0  0.000 450.0  0.462
+22:51:26.021            2 1977.0  1.000  41.1 17.7   0.0    0.0  0.000 1977.0  1.000  0.00 247.1 247.12  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+22:51:27.024            3  634.0  3.118  22.1 14.2   0.0    0.0  0.000  634.0  3.118  0.00 79.25  79.25  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+22:51:28.010            4 1452.0  1.370  49.4 39.0   0.0    0.0  0.000 1452.0  1.370  0.00 181.5 181.50  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+22:51:29.020            5 1287.0  1.530  51.0 33.3   0.0    0.0  0.000 1287.0  1.530  0.00 160.8 160.88  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+22:51:30.012            6 1285.0  1.571  43.4 21.6   0.0    0.0  0.000 1285.0  1.571  0.00 160.6 160.62  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+22:51:31.012            7 1353.0  1.480  17.5 12.0   0.0    0.0  0.000 1353.0  1.480  0.00 169.1 169.12  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+22:51:32.011            8 1311.0  1.503  19.7 14.2   0.0    0.0  0.000 1311.0  1.503  0.00 163.8 163.88  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+22:51:33.016            9 1286.0  1.573  20.2 11.1   0.0    0.0  0.000 1286.0  1.573  0.00 160.7 160.75  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+22:51:34.017           10 1261.0  1.573  17.7 13.2   0.0    0.0  0.000 1261.0  1.573  0.00 157.6 157.62  131072   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+22:51:34.850 localhost-0: anchor=/mnt/04d148ca-4342-4a72-8322-c01e459625d7 create complete.
+22:51:35.017           11 1114.0  1.379  24.6 15.3   0.0    0.0  0.000 1114.0  1.379  0.00 139.2 139.25  131072   0.0  0.000   0.0  0.000   2.0  10122   0.0  0.000   2.0  0.235   0.0  0.000
+22:51:35.042     avg_2-11 1296.0  1.501  30.6 19.1   0.0    0.0  0.000 1296.0  1.501  0.00 162.0 162.00  131072   0.0  0.000   0.0  0.000   0.2  10122   0.0  0.000   0.2  0.235   0.0  0.000
+22:51:35.043     std_2-11  327.4  6.348                                 327.4  6.348                                                        0.6 117.32                0.6  0.284             
+22:51:35.043     max_2-11 1977.0 341.68                                1977.0 341.68                                   0.180        0.488   2.0  10205        2.154   2.0  0.435       36.803
+22:51:35.206 
+22:51:35.206 Miscellaneous statistics:
+22:51:35.206 (These statistics do not include activity between the last reported interval and shutdown.)
+22:51:35.206 FILE_CREATES        Files created:                                    2          0/sec
+22:51:35.206 DIRECTORY_CREATES   Directories created:                              1          0/sec
+22:51:35.206 FILE_DELETES        Files deleted:                                  450         40/sec
+22:51:35.207 DIRECTORY_DELETES   Directories deleted:                             12          1/sec
+22:51:35.207 WRITE_OPENS         Files opened for write activity:                  2          0/sec
+22:51:35.207 DIR_EXISTS          Directory may not exist (yet):                    4          0/sec
+22:51:35.207 FILE_CLOSES         Close requests:                                   2          0/sec
+22:51:35.207 
+22:51:35.207 Flushing all reports
+22:51:36.167 Java Heap in MB. max:  512.000; current:   66.000; used:   21.535; free:   44.465
+22:51:36.178 slv=localhost-0 fwd=fwd1 fsd=fsd1 anchor=/mnt/04d148ca-4342-4a72-8322-c01e459625d7 threads= 2 skew= 0.00 operation=create 
+22:51:36.184 Waiting for synchronization of all slaves
+22:51:36.587 Synchronization of all slaves complete
+
+<a name="_1876631416"></a><i><b>22:51:37.004 Starting RD=rd1; elapsed=30; fwdrate=max. For loops: None</b></i>
+
+22:51:37.360 
+22:51:37.360 Message from slave localhost-0: 
+22:51:37.360 Anchor: /mnt/04d148ca-4342-4a72-8322-c01e459625d7
+22:51:37.361 Vdbench is trying to create a new file, but all files already exist, 
+22:51:37.361 and no threads are currently active deleting files
+22:51:37.361 FwgThread.canWeGetMoreFiles(): Shutting down threads for operation=create
+22:51:37.361 
+Nov 14, 2022 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ...mkdir.... ...rmdir.... ...create... ....open.... ...close.... ...delete...
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp
+22:51:38.019            1    0.0  0.000  12.6 2.72   0.0    0.0  0.000    0.0  0.000  0.00  0.00   0.00       0   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000   0.0  0.000
+22:51:38.030      avg_2-1 NaN  0.000 NaN NaN   0.0 NaN  0.000 NaN  0.000 NaN NaN NaN       0 NaN  0.000 NaN  0.000 NaN  0.000 NaN  0.000 NaN  0.000 NaN  0.000
+22:51:38.030      std_2-1                                                                                                                                                                    
+22:51:38.030      max_2-1                                                                                                                                                                    
+22:51:38.144 Miscellaneous statistics: All counters are zero
+22:51:38.144 Flushing all reports
+22:51:38.147 Java Heap in MB. max:  512.000; current:   66.000; used:   22.878; free:   43.122
+22:51:38.157 Ending Reporter
+22:51:38.924 Vdbench execution completed successfully. Output directory: /home/sahithishresta/Downloads/vdbench/output 
+
+22:51:39.871 Java Heap in MB. max:  512.000; current:   66.000; used:   19.218; free:   46.782
